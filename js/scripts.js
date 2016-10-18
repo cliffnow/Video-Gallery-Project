@@ -27,15 +27,15 @@ $('.flexslider').flexslider({
 
     // if the name you clicked on is 'all', anything with a hidden class is removed so it shows all
     if(filterVal == 'all') {
-      $('ul#portfolio li.hidden').fadeIn('slow').removeClass('hidden');
+      $('ul#portfolio li.hidden').fadeIn('slow')
     } else {
           $('ul#portfolio li').each(function() {
             // checks to see the class of the list item is not the same as the one clicked
             if(!$(this).hasClass(filterVal)) {
-              // adds a hidden class to those classes not matching the clicked
+              // adds a hidden class "if applicable" to those classes not matching the clicked or just fades out
               $(this).fadeOut('normal').addClass('hidden');
             } else {
-              // removes hidden class to the name picked so it is viewed
+              // removes hidden class "if applicable" to the name picked so it is viewed or it just fades in
               $(this).fadeIn('slow').removeClass('hidden');
             }
           });
