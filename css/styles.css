@@ -207,3 +207,22 @@ ul#portfolio li {
 }
 
 ul#portfolio li { margin-right: 5px; }
+
+
+#myDiv{
+  background:#cc0000;
+  font-size: 16px;
+  transition: all 0.5s ease-out;
+  }
+
+#myDiv.fullscreen{
+    z-index: 9999;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+transition: all 0.5s ease-out;
+ }

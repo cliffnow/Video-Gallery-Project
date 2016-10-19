@@ -71,5 +71,9 @@ $('.flexslider').flexslider({
  //
  //   return false;
  // });
+ $('button').click(function(e){
+     $('#myDiv').toggleClass('fullscreen');
+ });
+
 
 });
